@@ -1,0 +1,25 @@
+.root {
+  display: grid;
+  font-size: var(--textSizeSmall);
+  font-weight: 400;
+  color: #{'rgba(var(--colorTheme3), .5)'};
+  transition: var(--transitionTime);
+
+  &:focus-within {
+    color: #{'rgb(var(--colorTheme5))'};
+  }
+}
+
+.field {
+  padding: var(--inputPadding);
+  border-bottom: 1px solid #{'rgba(var(--colorTheme3), .5)'};
+  font-size: var(--textSizeMain);
+  line-height: 1.3;
+  font-weight: 300;
+  color: #{'rgb(var(--colorTheme4))'};
+  transition: var(--transitionTime);
+
+  &:focus {
+    border-bottom-color: #{'rgb(var(--colorTheme5))'};
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../assets/globalStyle/variables.scss';
+@import '../../assets/globalStyle/mixins.scss';
+
+.header {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: var(--iconButtonSize) 1fr var(--iconButtonSize);
+  grid-template-rows: 1fr;
+  grid-column-gap: var(--gapSM);
+  justify-items: center;
+  align-items: center;
+  padding-right: var(--headerPadding);
+  padding-left: var(--headerPadding);
+  background: #{'rgb(var(--colorTheme5))'};
+  color: #{'rgb(var(--colorTheme4))'};
+  box-shadow: 0 2px 4px 0 #{'rgba(var(--colorTheme4), .75)'};
+
+  @media #{$desktop} {
+    grid-template-columns: 1fr var(--iconButtonSize);
+    justify-items: start;
+  }
+}
+
+.burgerButtonWrapper {
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.title {
+  @include title;
+  @include truncate;
+  color: #{'rgb(var(--colorTheme4))'};
+}

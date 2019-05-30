@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
+  font: 300 var(--textSizeMain);
+  line-height: 1;
+  text-decoration: none;
+  transition: var(--transitionTime);
+}
+
+.disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.icon {
+  width: var(--iconButtonSize);
+  height: var(--iconButtonSize);
+  cursor: pointer;
+}

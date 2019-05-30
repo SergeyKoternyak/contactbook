@@ -1,0 +1,34 @@
+@import '../../../assets/globalStyle/mixins.scss';
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr var(--iconButtonSize);
+  justify-items: start;
+  grid-column-gap: var(--gapXS);
+  align-items: center;
+}
+
+.profileButton {
+  display: grid;
+  grid-template-columns: var(--avatarSizeSM) 1fr;
+  grid-template-areas: 'avatar name';
+  grid-column-gap: var(--gapXS);
+  align-items: center;
+  width: 100%;
+  cursor: default;
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.name {
+  grid-area: name;
+  font-size: var(--textSizeMain);
+  color: #{'rgb(var(--colorTheme1))'};
+  @include truncate;
+}
+
+.logoutButton {
+  color: #{'rgb(var(--colorTheme5))'};
+}

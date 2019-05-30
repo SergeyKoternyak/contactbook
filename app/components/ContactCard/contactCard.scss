@@ -1,0 +1,59 @@
+@import '../../assets/globalStyle/mixins.scss';
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr var(--iconButtonSize);
+  justify-items: start;
+  grid-column-gap: var(--gapXS);
+  align-items: center;
+}
+
+.contactButton {
+  display: grid;
+  grid-template-columns: var(--avatarSizeSM) 1fr;
+  grid-template-rows: repeat(2, calc(var(--avatarSizeSM) / 2));
+  grid-template-areas:
+    'avatar fullName'
+    'avatar info';
+  grid-column-gap: var(--gapXS);
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+
+  &.partView {
+    grid-template-areas:
+      'avatar fullName'
+      'avatar fullName';
+  }
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.fullName {
+  grid-area: fullName;
+  align-self: end;
+  font-size: var(--textSizeMain);
+  color: #{'rgb(var(--colorTheme4))'};
+  line-height: 1;
+  @include truncate;
+
+  .partView & {
+    align-self: center;
+  }
+}
+
+.info {
+  grid-area: info;
+  align-self: start;
+  font-size: var(--textSizeSmall);
+  line-height: 1.5;
+  color: #{'rgba(var(--colorTheme3), .75)'};
+  @include truncate;
+}
+
+.actionButton {
+  color: #{'rgba(var(--colorTheme3), .75)'};
+}

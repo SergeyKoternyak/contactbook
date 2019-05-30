@@ -1,0 +1,32 @@
+.button {
+  position: relative;
+  padding: var(--gapSM);
+  font-size: var(--textSizeMain);
+  line-height: 1;
+  color: #{'rgb(var(--colorTheme1))'};
+  font-weight: 300;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #{'rgba(var(--colorTheme2), .25)'}, transparent);
+    opacity: 0;
+    transition: var(--transitionTime);
+  }
+
+  &.active::before {
+    border-left: 2px solid #{'rgb(var(--colorTheme5))'};
+  }
+  
+  &.active,
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+    }
+  }
+}

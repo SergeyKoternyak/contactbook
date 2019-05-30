@@ -1,0 +1,22 @@
+.root {
+  position: relative;
+  display: grid;
+  width: fit-content;
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+}

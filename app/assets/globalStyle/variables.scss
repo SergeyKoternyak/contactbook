@@ -1,0 +1,99 @@
+/* Colors */
+$colorBeige: rgb(239, 235, 228);
+$colorDarkBeige: rgb(217, 210, 198);
+$colorGray: rgb(52, 70, 82);
+$colorDarkGray: rgb(16, 31, 42);
+$colorYellow: rgb(255, 177, 67);
+$colorRed: rgb(255, 67, 67);
+
+// California beach
+/* $colorBeige: #ead9bf;
+$colorDarkBeige: #c1a180;
+$colorGray: #566d87;
+$colorDarkGray: #505772;
+$colorYellow: #ee8166; */
+
+// Spring evening
+/* $colorBeige: #c6cac1;
+$colorDarkBeige: #9d8e6d;
+$colorGray: #698d70;
+$colorDarkGray: #23543c;
+$colorYellow: #c58662; */
+
+// Suga Aesthetic
+/* $colorBeige: #dfdde3;
+$colorDarkBeige: #8f95a9;
+$colorGray: #806175;
+$colorDarkGray: #3f4564;
+$colorYellow: #61a5d0; */
+
+// 
+/* $colorBeige: #fff7ee;
+$colorDarkBeige: #005a74;
+$colorGray: #f05f55;
+$colorDarkGray: #ef535c;
+$colorYellow: #80a696; */
+
+/* $colorBeige: #c7cebb;
+$colorDarkBeige: #927450;
+$colorGray: #5a0f40;
+$colorDarkGray: #980842;
+$colorYellow: #032913; */
+
+/* $colorBeige: #f7f4e8;
+$colorDarkBeige: #e9e0ba;
+$colorGray: #283607;
+$colorDarkGray: #0d1202;
+$colorYellow: #b64a1a; */
+
+/* Media */
+$desktop: '(min-width: 768px)';
+$desktopSize: '(min-width: 768px)';
+
+:root {
+  --sidebarPadding: 16px;
+  --sidebarWidth: 320px;
+
+  --gapXS: 8px;
+  --gapSM: 16px;
+  --gapMD: 24px;
+  --gapLG: 32px;
+
+  
+
+  /* Main */
+  --iconButtonSize: 32px;
+  --avatarSizeSM: 48px;
+  --inputPadding: 8px 0 4px;
+  --transitionTime: .3s;
+
+  /* Header */
+  --headerHeight: 56px;
+  --headerPadding: 16px;
+
+  /* Fonts */
+  --titleSize: 24px;
+  --textSizeMain: 16px; 
+  --textSizeSmall: 12px;
+
+  // Colors
+  --colorTheme1: 239, 235, 228;
+  --colorTheme2: 217, 210, 198;
+  --colorTheme3: 52, 70, 82;
+  --colorTheme4: 16, 31, 42;
+  --colorTheme5: 255, 177, 67;
+  --colorError: 255, 67, 67;
+
+/* $colorBeige: #f7f4e8;
+$colorDarkBeige: #e9e0ba;
+$colorGray: #283607;
+$colorDarkGray: #0d1202;
+$colorYellow: #b64a1a; */
+
+
+  /* --colorTheme1: 247, 244, 232;
+  --colorTheme2: 233, 224, 186;
+  --colorTheme3: 40, 54, 7;
+  --colorTheme4: 13, 18, 2;
+  --colorTheme5: 182, 74, 26; */
+}

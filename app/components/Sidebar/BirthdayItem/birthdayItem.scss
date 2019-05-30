@@ -1,0 +1,44 @@
+@import '../../../assets/globalStyle/mixins.scss';
+
+.button {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'name birthday'
+    'age age';
+  grid-column-gap: var(--gapXS);
+  padding: var(--gapXS) 0;
+  font-size: var(--textSizeMain);
+  line-height: 1.5;
+  color: #{'rgb(var(--colorTheme1))'};
+  opacity: .5;
+  transition: var(--transitionTime);
+
+  &.active {
+    opacity: 1;
+    color: #{'rgb(var(--colorTheme5))'};
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.name {
+  grid-area: name;
+  @include truncate;
+}
+
+.birthday {
+  grid-area: birthday;
+  justify-self: end;
+}
+
+.age {
+  grid-area: age;
+  font-size: var(--textSizeSmall);
+  line-height: 1.2;
+  color: #{'rgba(var(--colorTheme1), .75)'};
+}

@@ -1,0 +1,17 @@
+@mixin truncate($width: 100%) {
+  max-width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin title($size: var(--titleSize), $lineHeight: 1, $color: #000) {
+  margin: 0;
+  font-size: $size;
+  line-height: $lineHeight;
+  color: $color;
+  font-style: normal;
+  font-weight: 500;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

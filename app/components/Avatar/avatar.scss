@@ -1,0 +1,16 @@
+@import '../../assets/globalStyle/mixins.scss';
+
+.avatar {
+  @include truncate;
+  border: 2px solid #{'rgb(var(--colorTheme5))'};
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sm {
+  min-width: var(--avatarSizeSM);
+  min-height: var(--avatarSizeSM);
+  max-width: var(--avatarSizeSM);
+  max-height: var(--avatarSizeSM);
+}

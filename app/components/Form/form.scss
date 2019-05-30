@@ -1,0 +1,15 @@
+.form {
+  display: grid;
+  gap: var(--gapMD) 0;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.fieldsWrapper {
+  display: grid;
+  gap: var(--gapMD) 0;
+}
+
+.submitButton {
+  align-self: end;
+}
